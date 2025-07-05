@@ -1,7 +1,7 @@
 {
   "name": "2-Year Roadmap",
   "short_name": "Roadmap",
-  "start_url": "index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#0ea5e9",
