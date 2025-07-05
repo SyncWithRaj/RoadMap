@@ -288,6 +288,23 @@
       </div>
     </div>
   </div>
+  <script>
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+  // Load saved state
+  checkboxes.forEach((checkbox, index) => {
+    const saved = localStorage.getItem(`checkbox-${index}`);
+    if (saved === 'true') {
+      checkbox.checked = true;
+    }
+
+    // Save on change
+    checkbox.addEventListener('change', () => {
+      localStorage.setItem(`checkbox-${index}`, checkbox.checked);
+    });
+  });
+</script>
+
 </body>
 
 </html>
