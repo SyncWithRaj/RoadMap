@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2-Year Roadmap</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    .container {
+      border: 2px solid #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .year {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .box {
+      border: 1px solid #fff;
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 10px;
+    }
+    
+    .row h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      border: 2px solid white;
+      border-radius: 9px;
+      padding: 7px;
+      margin: 10px 10px 0px 10px;
+    }
+
+    .box ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .box li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: start;
+      gap: 0.5rem;
+    }
+
+    .box input[type="checkbox"] {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 6px;
+      border: 2px solid #999;
+      background: #111;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .box input[type="checkbox"]:checked {
+      background: #0ea5e9;
+      border-color: #0ea5e9;
+      box-shadow: 0 0 8px #0ea5e9aa;
+    }
+
+    .box input[type="checkbox"]::after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 6px;
+      width: 4px;
+      height: 8px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .box input[type="checkbox"]:checked::after {
+      opacity: 1;
+    }
+
+
+    .box input[type="checkbox"] {
+      margin-top: 3px;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      border: 2px solid white;
+      border-radius: 10px;
+      
+    }
+
+    .highlight {
+      text-align: center;
+      margin: 2rem 0;
+      font-weight: bold;
+      color: #facc15;
+      font-size: 2rem;
+    }
+
+    .schedule {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .schedule-box {
+      border: 1px solid #fff;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+
+    .schedule-box h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .schedule-box ul {
+      list-style-type: disc;
+      padding-left: 1.2rem;
+    }
+
+    .heading {
+      font-size: 50px;
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+      .year {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">RoadMap for 2 Years</h1>
+
+    <div class="year">
+      <div class="row">
+        <h2>1st Year</h2>
+        <div class="box">
+          <div style="text-align: center; font-size: larger; margin: 2px;"> 6th July 2025 - 5th January 2026</div>
+          <ul>
+            <li><input type="checkbox"> DSA completion (full time a day)</li>
+            <li><input type="checkbox"> TypeScript (full time a day)</li>
+            <li><input type="checkbox"> LeetCode beginner (1-2 hour a day)</li>
+            <li><input type="checkbox"> Web2 Projects (with TS) (2-3 hour a day)</li>
+            <li><input type="checkbox"> Start Learning DevOps (optional)</li>
+          </ul>
+        </div>
+        <div class="box">
+          <div style="text-align: center; font-size: larger; margin: 2px;"> 6th January 2026 - 5th July 2026</div>
+          <ul>
+            <li><input type="checkbox"> DevOps Clear (1 hr day)</li>
+            <li><input type="checkbox"> DSA continue LeetCode (1 - 1.5 hr a day)</li>
+            <li><input type="checkbox"> Make LeetCode profile better</li>
+            <li><input type="checkbox"> Web2 Projects (1 - 2 hr a day)</li>
+            <li><input type="checkbox"> DevOps Projects (1 - 2 hr a day)</li>
+            <li><input type="checkbox"> Learn about AI (optional)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <h2>2nd Year</h2>
+        <div class="box">
+          <div style="text-align: center; font-size: larger; margin: 2px;"> 6th July 2026 - 5th January 2027</div>
+
+          <ul>
+            <li><input type="checkbox"> Learn about GenAI (1/2 - 1 hr a day)</li>
+            <li><input type="checkbox"> Learn about AgenticAI (1/2 - 1 hr a day)</li>
+            <li><input type="checkbox"> DSA Continuation (1 hr a day)</li>
+            <li><input type="checkbox"> Web2 Projects (1 - 2 hr a day)</li>
+            <li><input type="checkbox"> DevOps Projects (1 hr a day)</li>
+            <li><input type="checkbox"> Web2 + AI Projects</li>
+          </ul>
+        </div>
+        <div class="box">
+          <div style="text-align: center; font-size: larger; margin: 2px;"> 6th January 2027 - 5th July 2027</div>
+          <ul>
+            <li><input type="checkbox"> Realworld Practice + Interview prep + Freelance (WEB3)</li>
+            <li><input type="checkbox"> Mock interview 2 per month</li>
+            <li><input type="checkbox"> Apply for freelance work</li>
+            <li><input type="checkbox"> Learn Web3 (if needed)</li>
+            <li><input type="checkbox"> Build 1 fullstack SaaS tool</li>
+            <li><input type="checkbox"> DSA Always (1 - 2 hr a day)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <ul>
+        <li><input type="checkbox"> Resume</li>
+        <li><input type="checkbox"> Portfolio</li>
+        <li><input type="checkbox"> Apply for 2/3 jobs/internship a week</li>
+      </ul>
+    </div>
+
+    <div class="highlight">It's not over until I win ✨</div>
+
+    <div class="schedule">
+      <div class="schedule-box">
+        <h3 style="font-size: 28px; text-align: center;">WeekDays</h3>
+        <ul>
+          <li>8 AM - 9 AM: WakeUp & Freshen up</li>
+          <li>9 AM - 10 AM: DSA</li>
+          <li>10:30 AM - 5:15 PM: College</li>
+          <li>5:15 PM - 6 PM: Rest</li>
+          <li>6 PM - 8 PM: Project</li>
+          <li>8 PM - 9 PM: Dinner</li>
+          <li>9 PM - 9:30 PM: Rest</li>
+          <li>9:30 PM - 00 / 1 AM: Project / DSA (LeetCode)</li>
+          <li>00 / 1 AM - 8 AM: Sleep</li>
+        </ul>
+      </div>
+
+      <div class="schedule-box">
+        <h3 style="font-size: 28px; text-align: center;">WeekEnds</h3>
+        <ul>
+          <li>8 AM - 9 AM: WakeUp & Freshen up</li>
+          <li>9 AM - 12 PM: DSA</li>
+          <li>12 PM - 1 PM: Lunch</li>
+          <li>1 PM - 2 PM: Rest</li>
+          <li>2 PM - 4 / 5 PM: Clg work + Study</li>
+          <li>After 5 PM - 8 PM: Project</li>
+          <li>8 PM - 9 PM: Dinner</li>
+          <li>9 PM - 9:30 PM: Rest</li>
+          <li>9:30 PM - 00 / 1 AM: Project / DSA</li>
+          <li>00 / 1 AM - 8 AM: Sleep</li>
+        </ul>
+      </div>
+
+      <div class="schedule-box">
+        <h3 style="font-size: 28px; text-align: center;">Vacations</h3>
+        <ul>
+          <li>2 hr DSA / Day</li>
+          <li>2 - 3 hr Project / Day</li>
+          <li>Work minimum 4 to 5 hr a Day</li>
+          <li>Enjoys vacation also &gt;_&lt;</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
